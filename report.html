@@ -225,6 +225,125 @@
     .price-item strong { color: var(--white); }
     .price-item span { color: var(--muted); font-size: 0.78rem; display: block; }
 
+    /* ── Ad Creative Brief ─────────────────────────────────── */
+    #ad-brief { background: var(--navy-mid); }
+
+    .brief-grid { display: flex; flex-direction: column; gap: 36px; }
+
+    .brief-adset {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .brief-adset-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 20px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--white);
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border);
+    }
+    .brief-adset-header.evergreen { background: rgba(201,168,76,0.12); }
+    .brief-adset-header.holidays  { background: rgba(58,110,165,0.15); }
+    .brief-adset-pill {
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+    .evergreen .brief-adset-pill { background: var(--gold); color: var(--navy-deep); }
+    .holidays  .brief-adset-pill { background: var(--blue-lead); color: var(--white); }
+    .brief-adset-note {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-weight: 400;
+      margin-left: auto;
+      font-style: italic;
+    }
+
+    .brief-ad-group { padding: 20px 20px 4px; }
+    .brief-ad-group + .brief-ad-group { border-top: 1px solid var(--border); }
+    .brief-group-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 14px;
+    }
+    .brief-ads-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .brief-ad-card {
+      background: var(--navy-mid);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+    .brief-ad-num {
+      font-size: 0.65rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      margin-bottom: 10px;
+    }
+    .brief-ad-copy {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.7;
+      font-style: italic;
+      border-left: 3px solid var(--gold);
+      padding-left: 12px;
+      margin-bottom: 14px;
+    }
+    .brief-ad-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .brief-meta-item {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+    .brief-meta-item strong { color: var(--gold-light); }
+
+    .preview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .preview-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-top: 3px solid var(--gold);
+      border-radius: var(--radius);
+      padding: 14px;
+    }
+    .preview-label {
+      font-size: 0.72rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .brief-ads-row { grid-template-columns: 1fr; }
+      .preview-grid  { grid-template-columns: 1fr; }
+      .brief-adset-note { margin-left: 0; width: 100%; }
+    }
+
     /* ── Platform Performance ──────────────────────────────── */
     #platform-performance { background: var(--navy-mid); }
     .perf-grid {
@@ -1203,7 +1322,7 @@
         <div class="kpi-icon">👥</div>
         <div class="kpi-value">386</div>
         <div class="kpi-label">CRM Contacts Generated</div>
-        <div class="kpi-sub">Captured in GoHighLevel via Facebook campaign</div>
+        <div class="kpi-sub">Captured in Reviewtap CRM via Facebook campaign</div>
       </div>
 
       <div class="kpi-card highlight">
@@ -1237,7 +1356,7 @@
         <ul class="ad-set-list">
           <li>
             <strong>LL Public Cruises — Evergreen Ad Set</strong>
-            <span>Ran full campaign duration (24 Mar – 11 May 2026). Targeted ongoing Sunday leisure cruises and evergreen interest audiences. Primary spend driver.</span>
+            <span>Ran 24 Mar – 11 Apr 2026. Targeted ongoing Sunday leisure cruises and evergreen interest audiences. Primary spend driver.</span>
           </li>
           <li>
             <strong>LL Public Cruises — Upcoming Public Holidays Ad Set</strong>
@@ -1260,7 +1379,7 @@
           </div>
           <div class="meta-item">
             <span class="meta-label">CRM</span>
-            <span class="meta-value">GoHighLevel (GHL) with Shopify integration</span>
+            <span class="meta-value">Reviewtap CRM with Shopify integration</span>
           </div>
         </div>
       </div>
@@ -1309,7 +1428,138 @@
 
 
 <!-- ══════════════════════════════════════════════════════════
-     4. PLATFORM PERFORMANCE
+     4. AD CREATIVE BRIEF & PREVIEWS
+══════════════════════════════════════════════════════════════ -->
+<section id="ad-brief">
+  <div class="container">
+    <h2 class="section-heading">Approved Ad Creative Brief &amp; Previews</h2>
+    <p style="color:var(--muted);font-size:0.9rem;margin-bottom:36px;max-width:780px;">
+      The following ad copy and creatives were approved prior to campaign launch. Two ad sets were created —
+      an Evergreen set for ongoing Sunday cruises, and a Public Holidays set for time-sensitive promotions.
+      Each set contained ads for both the 1-Hour Leisure Cruise and the 2-Hour Sunday Lunch Cruise.
+    </p>
+
+    <!-- Ad set tabs layout -->
+    <div class="brief-grid">
+
+      <!-- EVERGREEN ADS -->
+      <div class="brief-adset">
+        <div class="brief-adset-header evergreen">
+          <span class="brief-adset-pill">Evergreen</span>
+          LL Public Cruises — Evergreen Ads
+          <span class="brief-adset-note">Can be switched on/off when seats need to be filled</span>
+        </div>
+
+        <div class="brief-ad-group">
+          <div class="brief-group-label">🚢 Leisure Cruise Ads</div>
+          <div class="brief-ads-row">
+            <div class="brief-ad-card">
+              <div class="brief-ad-num">Ad 1</div>
+              <div class="brief-ad-copy">"Looking for something different this weekend?<br><br>Join our 1-hour Leisure Cruise on the Vaal River<br>R250.00 per adult | R125.00 per child U/12<br><br>• Scenic river views<br>• Relaxed atmosphere<br>• Fully stocked cash bar<br><br>Times: Sundays &amp; public holidays 10H30 – 11H30<br>Limited spots available – book your seat now.<br>WhatsApp to book your seat 083 749 0224"</div>
+              <div class="brief-ad-meta">
+                <span class="brief-meta-item"><strong>Headline:</strong> 1-Hour Vaal Cruise from R250</span>
+                <span class="brief-meta-item"><strong>CTA:</strong> Book Now</span>
+              </div>
+            </div>
+            <div class="brief-ad-card">
+              <div class="brief-ad-num">Ad 2</div>
+              <div class="brief-ad-copy">"A simple, relaxing escape on the water.<br><br>Our Leisure Cruise is a 1-hour experience on the Vaal River, perfect for a quick outing with friends or family.<br><br>@ R250.00 per adult | R125.00 per child U/12<br>(No food – drinks available on board)<br><br>Runs Sundays &amp; public holidays<br>Spots are limited – secure yours now.<br>WhatsApp to book your seat 083 749 0224"</div>
+              <div class="brief-ad-meta">
+                <span class="brief-meta-item"><strong>Headline:</strong> Quick Escape on the Vaal River</span>
+                <span class="brief-meta-item"><strong>CTA:</strong> Book Now</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="brief-ad-group">
+          <div class="brief-group-label">🍽 Sunday Lunch Cruise Ads</div>
+          <div class="brief-ads-row">
+            <div class="brief-ad-card">
+              <div class="brief-ad-num">Ad 1</div>
+              <div class="brief-ad-copy">"Turn your Sunday into something special.<br><br>Enjoy a 2-hour cruise + buffet lunch on the Vaal River<br>R680.00 per adult | R340.00 per child U/12<br><br>• Full buffet meal<br>• Live entertainment<br>• Scenic river views<br><br>Time: Sundays 13H00 – 15H00<br>Limited availability – book your table today.<br>WhatsApp to book your seat 083 749 0224"</div>
+              <div class="brief-ad-meta">
+                <span class="brief-meta-item"><strong>Headline:</strong> 2-Hour Lunch Cruise from R680</span>
+                <span class="brief-meta-item"><strong>CTA:</strong> Reserve Your Spot</span>
+              </div>
+            </div>
+            <div class="brief-ad-card">
+              <div class="brief-ad-num">Ad 2</div>
+              <div class="brief-ad-copy">"Good food. Great views. No stress.<br><br>Join our Sunday Lunch Cruise and enjoy a full buffet while cruising the Vaal River.<br><br>2-hour experience | R680.00 per adult | R340.00 per child U/12<br><br>Perfect for birthdays, family days, or just getting out of the house.<br>Seats fill up quickly – don't miss out.<br>WhatsApp to book your seat 083 749 0224"</div>
+              <div class="brief-ad-meta">
+                <span class="brief-meta-item"><strong>Headline:</strong> Sunday Lunch on the Water</span>
+                <span class="brief-meta-item"><strong>CTA:</strong> Book Now</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PUBLIC HOLIDAYS ADS -->
+      <div class="brief-adset">
+        <div class="brief-adset-header holidays">
+          <span class="brief-adset-pill">Public Holidays</span>
+          LL Public Cruises — Upcoming Public Holidays
+          <span class="brief-adset-note">Promoted before each upcoming public holiday</span>
+        </div>
+
+        <div class="brief-ad-group">
+          <div class="brief-group-label">🚢 Leisure Cruise — Public Holiday Ad</div>
+          <div class="brief-ads-row">
+            <div class="brief-ad-card">
+              <div class="brief-ad-num">Ad</div>
+              <div class="brief-ad-copy">"Got plans for the upcoming public holiday?<br><br>Join us on the Vaal River for a relaxing 1-hour Leisure Cruise – the perfect way to spend your day off.<br>R250.00 per adult | R125.00 per child U/12<br><br>• Scenic views<br>• Cash bar on board<br>• Easy, laid-back experience<br><br>We'll be sailing on all upcoming public holidays – spots are limited, so book early.<br>WhatsApp to book your seat 083 749 0224"</div>
+              <div class="brief-ad-meta">
+                <span class="brief-meta-item"><strong>Headline:</strong> Public Holiday Cruises Now Booking</span>
+                <span class="brief-meta-item"><strong>CTA:</strong> Book Now</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="brief-ad-group">
+          <div class="brief-group-label">🍽 Sunday Lunch Cruise — Public Holiday Ad</div>
+          <div class="brief-ads-row">
+            <div class="brief-ad-card">
+              <div class="brief-ad-num">Ad</div>
+              <div class="brief-ad-copy">"Make your public holiday feel like an actual break.<br><br>Join our 2-hour Lunch Cruise on the Vaal River – complete with a full buffet, entertainment, and beautiful views.<br>R680.00 per adult | R340.00 per child U/12<br><br>We'll be running special cruises on upcoming public holidays – perfect for families, celebrations, or just getting out.<br>Limited availability – book your table now.<br>WhatsApp to book your seat 083 749 0224"</div>
+              <div class="brief-ad-meta">
+                <span class="brief-meta-item"><strong>Headline:</strong> Public Holiday Lunch Cruises</span>
+                <span class="brief-meta-item"><strong>CTA:</strong> Reserve Your Spot</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.brief-grid -->
+
+    <!-- Ad Previews -->
+    <div style="margin-top:48px;">
+      <h3 class="section-subheading">How the Ads Appeared on Facebook &amp; Instagram</h3>
+      <p style="color:var(--muted);font-size:0.85rem;margin-bottom:20px;">
+        Facebook Ads Manager automatically generated multiple creative formats — single image, video slideshow, and collection — from the approved assets. Below are previews of how the ads rendered across placements.
+      </p>
+      <div class="preview-grid">
+        <div class="preview-card">
+          <div class="preview-label">1-Hour Leisure Cruise — Ad Formats (Facebook Feed &amp; Instagram)</div>
+          <img src="./fbadpreview.jpg" alt="Facebook ad previews for 1-Hour Leisure Cruise" style="width:100%;border-radius:4px;border:1px solid var(--border);">
+          <div class="gallery-caption">Shown in Facebook Feed (default, single media, video slideshow, collection) and Instagram Feed. Copy: "Looking for something different this weekend?" with WhatsApp CTA. 40 reactions, 4 comments, 1 share.</div>
+        </div>
+        <div class="preview-card">
+          <div class="preview-label">2-Hour Sunday Lunch Cruise — Ad Formats (Facebook Feed)</div>
+          <img src="./fbadpreview2.jpg" alt="Facebook ad previews for 2-Hour Sunday Lunch Cruise" style="width:100%;border-radius:4px;border:1px solid var(--border);">
+          <div class="gallery-caption">Shown in Facebook Feed across single media, collection, and video slideshow formats. Copy: "Turn your Sunday into something special." with WhatsApp CTA. 14 reactions.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════
+     5. PLATFORM PERFORMANCE
 ══════════════════════════════════════════════════════════════ -->
 <section id="platform-performance">
   <div class="container">
@@ -1552,7 +1802,7 @@
           <div class="stat-callout-num">386</div>
           <div class="stat-callout-text">
             <strong>Total Contacts Generated</strong>
-            <span>Captured in GoHighLevel CRM during campaign period</span>
+            <span>Captured in Reviewtap CRM during campaign period</span>
           </div>
         </div>
         <div class="stat-callout">
@@ -1722,14 +1972,14 @@
     <div class="gallery-grid">
 
       <div class="gallery-card">
-        <div class="gallery-card-title">GoHighLevel — 13 Confirmed Booking Leads</div>
-        <img src="./GHL All confirmed booking leads.png" alt="GoHighLevel confirmed booking leads list" loading="lazy">
+        <div class="gallery-card-title">Reviewtap CRM — 13 Confirmed Booking Leads</div>
+        <img src="./GHL All confirmed booking leads.png" alt="Reviewtap CRM confirmed booking leads list" loading="lazy">
         <div class="gallery-caption">Full list of 13 contacts who went through the complete booking enquiry process.</div>
       </div>
 
       <div class="gallery-card">
-        <div class="gallery-card-title">GoHighLevel — All 386 Campaign Contacts</div>
-        <img src="./GHL All Contacts for FB campaign time period.png" alt="GoHighLevel all contacts from Facebook campaign" loading="lazy">
+        <div class="gallery-card-title">Reviewtap CRM — All 386 Campaign Contacts</div>
+        <img src="./GHL All Contacts for FB campaign time period.png" alt="Reviewtap CRM all contacts from Facebook campaign" loading="lazy">
         <div class="gallery-caption">Total contact list filtered to the campaign period (24 Mar – 14 Apr 2026). 386 contacts captured.</div>
       </div>
 
@@ -1740,61 +1990,61 @@
       </div>
 
       <div class="gallery-card">
-        <div class="gallery-card-title">GHL — Charlene Flowers &amp; Early Leads (27 Mar)</div>
-        <img src="./Screenshot_13.png" alt="First confirmed leads in GHL CRM" loading="lazy">
+        <div class="gallery-card-title">Reviewtap — Charlene Flowers &amp; Early Leads (27 Mar)</div>
+        <img src="./Screenshot_13.png" alt="First confirmed leads in Reviewtap CRM" loading="lazy">
         <div class="gallery-caption">First confirmed leads entering the system — Charlene Flowers (27 Mar).</div>
       </div>
 
       <div class="gallery-card">
-        <div class="gallery-card-title">GHL — Sarah Ngobeni (29 Mar)</div>
+        <div class="gallery-card-title">Reviewtap — Sarah Ngobeni (29 Mar)</div>
         <img src="./Screenshot_11.png" alt="Sarah Ngobeni GHL contact record" loading="lazy">
         <div class="gallery-caption">Second confirmed lead — Sunday Leisure Cruise enquiry.</div>
       </div>
 
       <div class="gallery-card">
-        <div class="gallery-card-title">GHL — Belinda Mulelu &amp; Lebelo Sam (30 Mar)</div>
+        <div class="gallery-card-title">Reviewtap — Belinda Mulelu &amp; Lebelo Sam (30 Mar)</div>
         <img src="./Screenshot_10.png" alt="Belinda Mulelu and Lebelo Sam GHL records" loading="lazy">
         <div class="gallery-caption">Houseboat and Sunday Cruise leads on the same day.</div>
       </div>
 
       <div class="gallery-card">
-        <div class="gallery-card-title">GHL — Nombuso Khutshwa (31 Mar)</div>
+        <div class="gallery-card-title">Reviewtap — Nombuso Khutshwa (31 Mar)</div>
         <img src="./Screenshot_9.png" alt="Nombuso Khutshwa GHL contact record" loading="lazy">
         <div class="gallery-caption">Sunday Leisure Cruise lead.</div>
       </div>
 
       <div class="gallery-card">
-        <div class="gallery-card-title">GHL — Johannes Motloung (1 Apr)</div>
+        <div class="gallery-card-title">Reviewtap — Johannes Motloung (1 Apr)</div>
         <img src="./Screenshot_8.png" alt="Johannes Motloung GHL contact record" loading="lazy">
         <div class="gallery-caption">Sunday Leisure Cruise lead entering April pipeline.</div>
       </div>
 
       <div class="gallery-card">
-        <div class="gallery-card-title">GHL — Floyd Makhubu &amp; Petrus Gumede (3 Apr)</div>
+        <div class="gallery-card-title">Reviewtap — Floyd Makhubu &amp; Petrus Gumede (3 Apr)</div>
         <img src="./Screenshot_7.png" alt="Floyd Makhubu and Petrus Gumede GHL records" loading="lazy">
         <div class="gallery-caption">Two Sunday Cruise leads on the same day.</div>
       </div>
 
       <div class="gallery-card">
-        <div class="gallery-card-title">GHL — Nomsa Queen Ngwenya (4 Apr) — Houseboat Lead</div>
+        <div class="gallery-card-title">Reviewtap — Nomsa Queen Ngwenya (4 Apr) — Houseboat Lead</div>
         <img src="./Screenshot_6.png" alt="Nomsa Queen Ngwenya GHL contact record" loading="lazy">
         <div class="gallery-caption">Notable houseboat enquiry — second houseboat lead of the campaign.</div>
       </div>
 
       <div class="gallery-card">
-        <div class="gallery-card-title">GHL — Desiree Kgosimore &amp; Lorrain Ntshangase (6 Apr)</div>
+        <div class="gallery-card-title">Reviewtap — Desiree Kgosimore &amp; Lorrain Ntshangase (6 Apr)</div>
         <img src="./Screenshot_5.png" alt="Desiree Kgosimore and Lorrain Ntshangase GHL records" loading="lazy">
         <div class="gallery-caption">Two Sunday Leisure Cruise leads on the same day.</div>
       </div>
 
       <div class="gallery-card">
-        <div class="gallery-card-title">GHL — Mandlenkosi Dube (7 Apr)</div>
+        <div class="gallery-card-title">Reviewtap — Mandlenkosi Dube (7 Apr)</div>
         <img src="./Screenshot_4.png" alt="Mandlenkosi Dube GHL contact record" loading="lazy">
         <div class="gallery-caption">Sunday Leisure Cruise lead — 7 April.</div>
       </div>
 
       <div class="gallery-card full-width">
-        <div class="gallery-card-title">GHL — Merice Thompson (7 Apr) — Private Charter Lead</div>
+        <div class="gallery-card-title">Reviewtap — Merice Thompson (7 Apr) — Private Charter Lead</div>
         <img src="./Screenshot_3.png" alt="Merice Thompson GHL contact record — Private Charter" loading="lazy">
         <div class="gallery-caption">Only Private Charter confirmed lead of the campaign — highest-value service enquiry.</div>
       </div>
@@ -1811,7 +2061,7 @@
   <div class="container">
     <h2 class="section-heading">CRM Automation &amp; Review Campaigns</h2>
     <p style="color:var(--muted);font-size:0.9rem;margin-bottom:36px;max-width:780px;">
-      Two GoHighLevel workflows handle the full customer journey — from initial enquiry to post-cruise review collection.
+      Two Reviewtap CRM workflows handle the full customer journey — from initial enquiry to post-cruise review collection.
       The review campaign has already driven the <strong style="color:var(--white);">highest volume of Google reviews</strong> of any channel,
       but only <strong style="color:var(--white);">100 contacts</strong> have entered the flow to date. Running it at least 2× per month is the single highest-leverage action available.
     </p>
@@ -1920,13 +2170,13 @@
         <div class="wf-rec-title">Review Campaign Recommendation</div>
         <p class="wf-rec-body">
           The post-cruise review workflow is already the <strong>top driver of Google reviews</strong>, yet only 100 contacts have entered it.
-          Every guest who books and cruises should be marked as "Won" in GHL to trigger this workflow automatically.
+          Every guest who books and cruises should be marked as "Won" in Reviewtap CRM to trigger this workflow automatically.
           In addition, run a <strong>manual broadcast-style review campaign</strong> at least <strong>twice per month</strong>
           targeting all contacts who have been on a cruise but have not yet received a rating request.
           Even a 20% response rate from the existing 386 contacts could generate 77+ new Google reviews.
         </p>
         <div class="wf-rec-steps">
-          <div class="wf-rec-step"><span class="ap-dot gold" style="margin-top:4px;"></span>After every cruise, mark all guests as "Won" in GHL immediately — this auto-triggers the 24h review request.</div>
+          <div class="wf-rec-step"><span class="ap-dot gold" style="margin-top:4px;"></span>After every cruise, mark all guests as "Won" in Reviewtap CRM immediately — this auto-triggers the 24h review request.</div>
           <div class="wf-rec-step"><span class="ap-dot gold" style="margin-top:4px;"></span>Run a manual review campaign on the 1st and 15th of each month to any past guests not yet in the flow.</div>
           <div class="wf-rec-step"><span class="ap-dot gold" style="margin-top:4px;"></span>Monitor the 1–3 star feedback responses closely — these contain actionable service improvement data.</div>
           <div class="wf-rec-step"><span class="ap-dot gold" style="margin-top:4px;"></span>Use 4–5 star reviewer names (with permission) in ad creative and on the Shopify/booking page for social proof.</div>
@@ -2214,7 +2464,7 @@
           <div class="ap-block">
             <div class="ap-block-title">📣 Ongoing Broadcast Strategy — Non-Bookers</div>
             <p style="font-size:0.85rem;color:var(--muted);margin-bottom:16px;">
-              You have <strong style="color:var(--white);">373 warm contacts</strong> in GHL who showed interest but didn't book.
+              You have <strong style="color:var(--white);">373 warm contacts</strong> in Reviewtap CRM who showed interest but didn't book.
               These are your most cost-effective marketing channel — reaching them costs nothing.
               Send 2 broadcasts per month via WhatsApp.
             </p>
@@ -2238,17 +2488,20 @@
           </div>
 
           <div class="ap-block">
-            <div class="ap-block-title">📊 Ad Campaign Optimisation</div>
+            <div class="ap-block-title">📢 Continue &amp; Increase Ad Spend</div>
+            <div class="insight-box" style="margin-bottom:20px;">
+              <strong>The campaign must continue running.</strong> At R1,158.87 total spend over 7 weeks, this campaign generated 371 WhatsApp conversations, 386 CRM contacts, and 13 confirmed booking leads — a highly cost-effective result. Pausing now leaves momentum on the table. The recommendation is to <strong>increase the monthly budget to at least R2,500–R3,500/month</strong> to meaningfully scale results, particularly ahead of the winter public holiday season (June–August).
+            </div>
             <div class="ap-two-col">
               <div>
-                <div class="ap-action-item"><span class="ap-dot gold"></span><strong>Scale Facebook Reels (Public Holidays)</strong> — best efficiency at R1.77/result. Increase budget allocation.</div>
-                <div class="ap-action-item"><span class="ap-dot gold"></span><strong>Test Search Results</strong> — only R1.49 CPR. Increase budget to validate at scale.</div>
-                <div class="ap-action-item"><span class="ap-dot gold"></span><strong>Test WhatsApp Status</strong> — R1.40 CPR from small spend. Worth a dedicated budget increase.</div>
+                <div class="ap-action-item"><span class="ap-dot gold"></span><strong>Restart both ad sets immediately</strong> — Evergreen for ongoing Sundays, Public Holidays targeting June 16 (Youth Day) and other upcoming dates.</div>
+                <div class="ap-action-item"><span class="ap-dot gold"></span><strong>Increase overall monthly budget</strong> — from ~R660/month to R2,500–R3,500/month. At R3.12 CPR this could yield 800–1,100 conversations per month.</div>
+                <div class="ap-action-item"><span class="ap-dot gold"></span><strong>Scale Facebook Reels (Public Holidays)</strong> — best efficiency at R1.77/result. Prioritise in budget split.</div>
               </div>
               <div>
-                <div class="ap-action-item"><span class="ap-dot muted"></span>Pause or reduce Facebook Feed (Evergreen) — high volume but R4.56 CPR vs R1.98 for Public Holidays version.</div>
-                <div class="ap-action-item"><span class="ap-dot muted"></span>Test new ad creative variants — especially video content and testimonial-style posts for Reels.</div>
-                <div class="ap-action-item"><span class="ap-dot muted"></span>Add Instagram Reels as a dedicated placement with separate budget — currently near zero spend.</div>
+                <div class="ap-action-item"><span class="ap-dot gold"></span><strong>Test Search Results &amp; WhatsApp Status</strong> — lowest CPR placements (R1.40–R1.49). Allocate dedicated budget to validate at scale.</div>
+                <div class="ap-action-item"><span class="ap-dot muted"></span>Reduce Facebook Feed (Evergreen) allocation — R4.56 CPR is 2× less efficient than the Public Holidays version.</div>
+                <div class="ap-action-item"><span class="ap-dot muted"></span>Test new creative — video testimonials and Reels-native content. Refresh assets every 4–6 weeks to prevent creative fatigue.</div>
               </div>
             </div>
           </div>
@@ -2325,7 +2578,7 @@
     <div class="footer-meta">
       Vaal River, South Africa<br>
       Facebook Ad Campaign Report &nbsp;·&nbsp; 24 March – 11 May 2026<br>
-      Prepared: May 2026 &nbsp;·&nbsp; Data sources: Meta Ads Manager, GoHighLevel CRM, Shopify
+      Prepared: May 2026 &nbsp;·&nbsp; Data sources: Meta Ads Manager, Reviewtap CRM, Shopify
     </div>
     <div class="footer-confidential">This report is prepared for internal use by Liquid Lounge management.</div>
   </div>
